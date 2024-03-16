@@ -1,0 +1,6 @@
+@LabDemo.IDesign.EndpointToManager_HostAddress = http://localhost:5086
+
+GET {{LabDemo.IDesign.EndpointToManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
