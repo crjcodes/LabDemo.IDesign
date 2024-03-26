@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Clients", "1-Clients", "{585A488D-02F3-4149-87FB-4287E2511F48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Managers", "2-Managers", "{E55C2297-AE02-46F4-9265-553B11EFD388}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.EndpointToManager", "2-Managers\LabDemo.IDesign.EndpointToManager\LabDemo.IDesign.EndpointToManager.csproj", "{FF315F9A-B42B-49E5-A021-1B6500DB94FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Accessors", "3-Accessors", "{D788513B-896D-4259-85FF-EA17C9ADE9E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.Accessors", "3-Accessors\LabDemo.IDesign.Accessors\LabDemo.IDesign.Accessors.csproj", "{84489DEE-665F-480F-B0D7-CC8358F23137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Resources", "4-Resources", "{5D9A3E81-9ED5-412C-AED4-6C32578E106C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LabDemo.IDesign.Database.TSQL", "4-Resources\LabDemo.IDesign.Database.TSQL\LabDemo.IDesign.Database.TSQL.sqlproj", "{9CC207C8-79DA-4E1C-B198-37E020662893}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.Postgres", "4-Resources\LabDemo.IDesign.Postgres\LabDemo.IDesign.Postgres.csproj", "{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Utilities", "5-Utilities", "{C90906C0-EA40-44B1-9751-2E68AA361F1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.Utilities", "5-Utilities\LabDemo.IDesign.Utilities\LabDemo.IDesign.Utilities.csproj", "{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9-SolutionFiles", "9-SolutionFiles", "{7F0A0DE2-E0B2-48A5-B7BC-612BB406A049}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Documentation", "0-Documentation", "{458748BF-8C6C-43CB-A405-3E8E8CA2B934}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C8ECAA9-1C63-407B-8BA1-444BFFEF45C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Common", "6-Common", "{4E56BE23-B2FE-4E3D-8507-5F653CD9B168}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "labapp", "1-Clients\LabApp\labapp.esproj", "{EBC04E32-B740-4B73-8627-72A5ABEC1E29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF315F9A-B42B-49E5-A021-1B6500DB94FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF315F9A-B42B-49E5-A021-1B6500DB94FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF315F9A-B42B-49E5-A021-1B6500DB94FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF315F9A-B42B-49E5-A021-1B6500DB94FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84489DEE-665F-480F-B0D7-CC8358F23137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84489DEE-665F-480F-B0D7-CC8358F23137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84489DEE-665F-480F-B0D7-CC8358F23137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84489DEE-665F-480F-B0D7-CC8358F23137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC207C8-79DA-4E1C-B198-37E020662893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC207C8-79DA-4E1C-B198-37E020662893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC207C8-79DA-4E1C-B198-37E020662893}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9CC207C8-79DA-4E1C-B198-37E020662893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC207C8-79DA-4E1C-B198-37E020662893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC207C8-79DA-4E1C-B198-37E020662893}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF315F9A-B42B-49E5-A021-1B6500DB94FB} = {E55C2297-AE02-46F4-9265-553B11EFD388}
+		{84489DEE-665F-480F-B0D7-CC8358F23137} = {D788513B-896D-4259-85FF-EA17C9ADE9E9}
+		{9CC207C8-79DA-4E1C-B198-37E020662893} = {5D9A3E81-9ED5-412C-AED4-6C32578E106C}
+		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65} = {5D9A3E81-9ED5-412C-AED4-6C32578E106C}
+		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74} = {C90906C0-EA40-44B1-9751-2E68AA361F1E}
+		{EBC04E32-B740-4B73-8627-72A5ABEC1E29} = {585A488D-02F3-4149-87FB-4287E2511F48}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89A92D8E-D3EC-4CAC-809F-864E0819E5FE}
+	EndGlobalSection
+EndGlobal

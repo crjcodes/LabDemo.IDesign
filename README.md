@@ -28,5 +28,19 @@ The system solves a problem for the user: how to manage and see his or her indiv
     a. First option: SQL Server database
     b. Second option: Postgres
 
+## Deployable Plan
+
+Currently, 
+1.  The user app will be spun up as its own web app, a SPA React app
+1.  The thin minimal api client into the managers downward to the accessors will be a stand-alone service
+1.  The database will be its own standalone deployable, but the entities will be shared with the accessors in the api client
+
+This will result in three deployables running in different processes on the local host.
+
+Eventually, these three can be containerized separately or in some combination together
+
+Alternatives also exists, with a little rewriting, of running the user app and the API within the same container or even process, using internal messaging inside the process instead of the API approach.
+
+
 
 

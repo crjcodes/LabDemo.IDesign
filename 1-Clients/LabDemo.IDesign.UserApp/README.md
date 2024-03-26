@@ -1,3 +1,0 @@
-# LabDemo.IDesign.UserApp
-
-

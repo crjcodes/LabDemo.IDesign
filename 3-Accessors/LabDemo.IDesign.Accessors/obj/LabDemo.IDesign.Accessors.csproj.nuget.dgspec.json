@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crmcg\\source\\repos\\LabDemo.IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj": {}
+    "C:\\Users\\crmcg\\source\\repos\\LabDemo-IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crmcg\\source\\repos\\LabDemo.IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj": {
+    "C:\\Users\\crmcg\\source\\repos\\LabDemo-IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crmcg\\source\\repos\\LabDemo.IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj",
+        "projectUniqueName": "C:\\Users\\crmcg\\source\\repos\\LabDemo-IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj",
         "projectName": "LabDemo.IDesign.Accessors",
-        "projectPath": "C:\\Users\\crmcg\\source\\repos\\LabDemo.IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj",
+        "projectPath": "C:\\Users\\crmcg\\source\\repos\\LabDemo-IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\LabDemo.IDesign.Accessors.csproj",
         "packagesPath": "C:\\Users\\crmcg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crmcg\\source\\repos\\LabDemo.IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\obj\\",
+        "outputPath": "C:\\Users\\crmcg\\source\\repos\\LabDemo-IDesign\\3-Accessors\\LabDemo.IDesign.Accessors\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -54,7 +59,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
