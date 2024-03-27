@@ -28,6 +28,10 @@ The system solves a problem for the user: how to manage and see his or her indiv
     a. First option: SQL Server database
     b. Second option: Postgres
 
+### Technical Details
+
+The user app is a standalone React SPA based on the Visual Studio 2022 template to expedite getting this demo up and running.
+
 ## Deployable Plan
 
 Currently, 

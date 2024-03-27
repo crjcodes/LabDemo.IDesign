@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Common", "6-Common", "{4E
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "labapp", "1-Clients\LabApp\labapp.esproj", "{EBC04E32-B740-4B73-8627-72A5ABEC1E29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabDemo.IDesign.Common", "6-Common\LabDemo.IDesign.Common\LabDemo.IDesign.Common.csproj", "{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EBC04E32-B740-4B73-8627-72A5ABEC1E29}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65} = {5D9A3E81-9ED5-412C-AED4-6C32578E106C}
 		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74} = {C90906C0-EA40-44B1-9751-2E68AA361F1E}
 		{EBC04E32-B740-4B73-8627-72A5ABEC1E29} = {585A488D-02F3-4149-87FB-4287E2511F48}
+		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC} = {4E56BE23-B2FE-4E3D-8507-5F653CD9B168}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89A92D8E-D3EC-4CAC-809F-864E0819E5FE}
