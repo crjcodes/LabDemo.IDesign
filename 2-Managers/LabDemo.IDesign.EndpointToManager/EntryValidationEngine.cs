@@ -1,4 +1,4 @@
-﻿namespace LabDemo.IDesign.EndpointToManager;
+﻿namespace LabDemo.IDesign.EntryManager;
 
 public class EntryValidationEngine
 {

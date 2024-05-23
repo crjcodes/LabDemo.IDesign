@@ -10,5 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
-
+	<ItemGroup>
+		<InternalsVisibleTo Include="IntegrationTests" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\3-Accessors\LabDemo.IDesign.Accessors\LabDemo.IDesign.Accessors.csproj" />
+	</ItemGroup>
 </Project>

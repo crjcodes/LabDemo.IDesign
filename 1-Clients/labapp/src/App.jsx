@@ -1,10 +1,50 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+async function handleFetchPing() {
+    try {
+        const response = await fetch(
+            "https://localhost:7210/ping/",  {
+                method: "GET",
+                mode: "no-cors",
+                cache: "non-cache",
+                credentials: "same-origin",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                redirect: "follow",
+                referrer: "no-referrer"
+            }
+        );
+
+        response
+            .then(async response => {
+                if (response == undefined || !response.ok) {
+                    return Promise.reject(response.statusText);
+                }
+            })
+            .then(async response => {
+                console.log(response);
+                const status = response.status;
+                console.log(status);
+                const pingMessage = await response.json();
+                console.log(pingMessage);
+
+                return pingMessage;
+            });
+    }
+    catch (error) {
+        console.error("A problem pinging the entry manager", error);
+    }
+}
+
+async function App() {
+    const [pingResponseData, setPingResponseData] = useState(null);
+
+    const result = await handleFetchPing();
+    useEffect(() => { setPingResponseData(result) }, [result]);
 
   return (
     <>
@@ -16,18 +56,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+          </p>
+        <div className="card">              
+              <div>{pingResponseData ? <pre>{pingResponseData}</pre> : 'Loading'
+              }</div>
+        </div>
     </>
   )
 }

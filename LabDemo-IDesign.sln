@@ -6,16 +6,18 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Clients", "1-Clients", "{585A488D-02F3-4149-87FB-4287E2511F48}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Managers", "2-Managers", "{E55C2297-AE02-46F4-9265-553B11EFD388}"
+	ProjectSection(SolutionItems) = preProject
+		2-Managers\LabDemo.IDesign.EndpointToManager\Dockerfile.Debug = 2-Managers\LabDemo.IDesign.EndpointToManager\Dockerfile.Debug
+		2-Managers\LabDemo.IDesign.EndpointToManager\Dockerfile.Release = 2-Managers\LabDemo.IDesign.EndpointToManager\Dockerfile.Release
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.EndpointToManager", "2-Managers\LabDemo.IDesign.EndpointToManager\LabDemo.IDesign.EndpointToManager.csproj", "{FF315F9A-B42B-49E5-A021-1B6500DB94FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.EntryManager", "2-Managers\LabDemo.IDesign.EndpointToManager\LabDemo.IDesign.EntryManager.csproj", "{FF315F9A-B42B-49E5-A021-1B6500DB94FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Accessors", "3-Accessors", "{D788513B-896D-4259-85FF-EA17C9ADE9E9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.Accessors", "3-Accessors\LabDemo.IDesign.Accessors\LabDemo.IDesign.Accessors.csproj", "{84489DEE-665F-480F-B0D7-CC8358F23137}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Resources", "4-Resources", "{5D9A3E81-9ED5-412C-AED4-6C32578E106C}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LabDemo.IDesign.Database.TSQL", "4-Resources\LabDemo.IDesign.Database.TSQL\LabDemo.IDesign.Database.TSQL.sqlproj", "{9CC207C8-79DA-4E1C-B198-37E020662893}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.Postgres", "4-Resources\LabDemo.IDesign.Postgres\LabDemo.IDesign.Postgres.csproj", "{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}"
 EndProject
@@ -26,20 +28,32 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9-SolutionFiles", "9-SolutionFiles", "{7F0A0DE2-E0B2-48A5-B7BC-612BB406A049}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		docker_compose.yml = docker_compose.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Documentation", "0-Documentation", "{458748BF-8C6C-43CB-A405-3E8E8CA2B934}"
 	ProjectSection(SolutionItems) = preProject
+		0-Documentation\Design.md = 0-Documentation\Design.md
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C8ECAA9-1C63-407B-8BA1-444BFFEF45C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Common", "6-Common", "{4E56BE23-B2FE-4E3D-8507-5F653CD9B168}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		global.json = global.json
+	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "labapp", "1-Clients\LabApp\labapp.esproj", "{EBC04E32-B740-4B73-8627-72A5ABEC1E29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabDemo.IDesign.Common", "6-Common\LabDemo.IDesign.Common\LabDemo.IDesign.Common.csproj", "{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDemo.IDesign.Common", "6-Common\LabDemo.IDesign.Common\LabDemo.IDesign.Common.csproj", "{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8-Testing", "8-Testing", "{AF83BD62-3121-48D8-A9F0-C02988C89B8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemTests", "8-Testing\Integration\SystemTests.csproj", "{B01BE179-576F-480E-9539-3D98C150E9FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntryManagerTests", "8-Testing\EntryManagerTests\EntryManagerTests.csproj", "{68ED1177-94BA-4913-867C-A1BCD1919D03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,12 +69,6 @@ Global
 		{84489DEE-665F-480F-B0D7-CC8358F23137}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84489DEE-665F-480F-B0D7-CC8358F23137}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84489DEE-665F-480F-B0D7-CC8358F23137}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CC207C8-79DA-4E1C-B198-37E020662893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CC207C8-79DA-4E1C-B198-37E020662893}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CC207C8-79DA-4E1C-B198-37E020662893}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{9CC207C8-79DA-4E1C-B198-37E020662893}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CC207C8-79DA-4E1C-B198-37E020662893}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CC207C8-79DA-4E1C-B198-37E020662893}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,6 +87,14 @@ Global
 		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B01BE179-576F-480E-9539-3D98C150E9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01BE179-576F-480E-9539-3D98C150E9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01BE179-576F-480E-9539-3D98C150E9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01BE179-576F-480E-9539-3D98C150E9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68ED1177-94BA-4913-867C-A1BCD1919D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68ED1177-94BA-4913-867C-A1BCD1919D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68ED1177-94BA-4913-867C-A1BCD1919D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68ED1177-94BA-4913-867C-A1BCD1919D03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,11 +102,12 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FF315F9A-B42B-49E5-A021-1B6500DB94FB} = {E55C2297-AE02-46F4-9265-553B11EFD388}
 		{84489DEE-665F-480F-B0D7-CC8358F23137} = {D788513B-896D-4259-85FF-EA17C9ADE9E9}
-		{9CC207C8-79DA-4E1C-B198-37E020662893} = {5D9A3E81-9ED5-412C-AED4-6C32578E106C}
 		{56C6A3B2-437A-419A-8ACB-1ECB88E89D65} = {5D9A3E81-9ED5-412C-AED4-6C32578E106C}
 		{EECD2F01-2A65-45C2-A1DC-F9EFE7F58F74} = {C90906C0-EA40-44B1-9751-2E68AA361F1E}
 		{EBC04E32-B740-4B73-8627-72A5ABEC1E29} = {585A488D-02F3-4149-87FB-4287E2511F48}
 		{9CFCAEBC-A298-4A4E-83E3-D3FA6AA6DEFC} = {4E56BE23-B2FE-4E3D-8507-5F653CD9B168}
+		{B01BE179-576F-480E-9539-3D98C150E9FC} = {AF83BD62-3121-48D8-A9F0-C02988C89B8C}
+		{68ED1177-94BA-4913-867C-A1BCD1919D03} = {AF83BD62-3121-48D8-A9F0-C02988C89B8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89A92D8E-D3EC-4CAC-809F-864E0819E5FE}

@@ -1,0 +1,24 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+RUN dotnet help
+
+
+# run as a development (with debug) or other environment
+#ENV DOTNET_ENVIRONMENT=${DOTNET_ENVIRONMENT}
+#RUN echo $DOTNET_ENVIRONMENT
+
+#FROM mcr.microsoft.com/dotnet/runtime:8.0 as base
+#WORKDIR /app
+#
+#FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+#COPY . /src
+#WORKDIR /src
+#RUN ls
+#RUN dotnet build "LabDemo.IDesign.EntryManager.csproj" -c Release -o /app/build
+#
+#FROM build AS publish
+#RUN dotnet publish "LabDemo.IDesign.EntryManager.csproj" -c Release -o /app/publish
+#
+#FROM base AS final
+#WORKDIR /app
+#COPY --from=publish /app/publish .
+#ENTRYPOINT ["dotnet", "LabDemo.IDesign.EndpointToManager.dll"]

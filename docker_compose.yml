@@ -1,0 +1,29 @@
+volumes:
+  labworkdbdata:
+
+services:
+  labwork_api:
+    container_name: labwork_api
+    build:
+      context: .
+      dockerfile: 2-Managers/LabDemo.IDesign.EndpointToManager/Dockerfile
+
+  labwork_db:
+    image: postgres
+    restart: on-failure
+    environment:
+      - POSTGRES_USER=developer
+      - POSTGRES_PASSWORD=local123
+      - POSTGRES_DB=labworkdb
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -q -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      timeout: 10s
+      interval: 5s
+      retries: 10
+    volumes: 
+      - labworkdbdata:/var/lib/postgresql/data    
+
+ 
+

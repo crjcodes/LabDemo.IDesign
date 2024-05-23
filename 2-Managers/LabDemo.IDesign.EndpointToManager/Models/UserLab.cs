@@ -1,4 +1,4 @@
-﻿namespace LabDemo.IDesign.EndpointToManager.Models;
+﻿namespace LabDemo.IDesign.EntryManager.Models;
 
 /// <summary>
 /// Minimal model for client-manager and manager-engine interactions

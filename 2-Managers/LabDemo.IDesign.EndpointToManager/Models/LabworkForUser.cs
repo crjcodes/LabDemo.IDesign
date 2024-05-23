@@ -1,4 +1,4 @@
-﻿namespace LabDemo.IDesign.EndpointToManager.Models;
+﻿namespace LabDemo.IDesign.EntryManager.Models;
 
 public class LabworkForUser
 {

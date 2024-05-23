@@ -1,6 +1,6 @@
-﻿using LabDemo.IDesign.EndpointToManager.Models;
+﻿using LabDemo.IDesign.EntryManager.Models;
 
-namespace LabDemo.IDesign.EndpointToManager;
+namespace LabDemo.IDesign.EntryManager;
 
 public class EntryManager
 {

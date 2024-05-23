@@ -1,0 +1,26 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 as build
+WORKDIR /src
+
+# copying entire solution for dependencies blindly
+# (probably could refine to just this project plus specific dependencies, but then more fragile)
+
+COPY ../.. .
+
+RUN pwd
+RUN ls
+
+WORKDIR /src/2-Managers/LabDemo.IDesign.EndpointToManager
+
+RUN pwd
+RUN ls
+
+# RUN dotnet publish LabDemo.IDesign.EntryManager.csproj -c Debug -o /publish
+
+# FROM mcr.microsoft.com/dotnet/aspnet:8.0
+# WORKDIR /app
+# COPY --from=build /publish .
+
+# TODO: eventually, this will crash if the Postgres container isn't up and running
+# To put another way, this executable is dependent on the existence of the Postgres database
+
+# ENTRYPOINT ["dotnet", "LabDemo.IDesign.EntryManager.exe"]
