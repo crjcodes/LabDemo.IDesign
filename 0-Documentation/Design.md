@@ -2,9 +2,13 @@
 
 Using the IDesign methodology
 
-- [Conceptual Diagram](Conceptual.png)
-- [Conceptual Diagram](Deliverables.png)
+## Conceptual Design
 
+![Conceptual Diagram](Labwork-Conceptual.png)
+
+## Project Solution and Deliverable Approach
+
+![Deliverables Diagram](Labwork-Deliverables.png)
 
 ## Use Cases
 

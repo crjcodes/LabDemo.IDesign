@@ -34,6 +34,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Documentation", "0-Documentation", "{458748BF-8C6C-43CB-A405-3E8E8CA2B934}"
 	ProjectSection(SolutionItems) = preProject
 		0-Documentation\Design.md = 0-Documentation\Design.md
+		0-Documentation\Labwork-Conceptual.png = 0-Documentation\Labwork-Conceptual.png
+		0-Documentation\Labwork-Deliverables.png = 0-Documentation\Labwork-Deliverables.png
 		README.md = README.md
 	EndProjectSection
 EndProject
